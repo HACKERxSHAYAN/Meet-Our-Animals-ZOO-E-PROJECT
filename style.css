@@ -469,11 +469,29 @@ img { max-width: 100%; height: auto; }
     font-weight: 500;
     border-radius: var(--radius-md);
     transition: var(--transition);
+    position: relative;
+    overflow: hidden;
+    z-index: 1;
+}
+.btn-primary-custom::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 0;
+    height: 100%;
+    background: var(--brown-dark);
+    z-index: -1;
+    transition: width 0.35s ease-in-out;
+}
+.btn-primary-custom:hover::before {
+    width: 100%;
 }
 .btn-primary-custom:hover {
     color: var(--white);
     transform: translateY(-3px);
     box-shadow: var(--shadow-md);
+    border-color: var(--brown-dark);
 }
 .btn-outline-light {
     border: 2px solid var(--white);
