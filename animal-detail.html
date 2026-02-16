@@ -19,16 +19,16 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <!-- ============================================
-         NAVBAR - ONLY "MEET OUR ANIMALS"
-    ============================================= -->
-    <nav class="navbar navbar-expand-lg fixed-top" id="mainNavbar">
+    <!-- ===========================
+         NAVIGATION
+    ============================ -->
+    <nav class="navbar navbar--transparent" id="mainNavbar">
         <div class="container">
             <a class="navbar-brand" href="#">
-                <i class="fas fa-paw me-2"></i>
+                <i class="fas fa-paw"></i>
                 <span class="brand-text">Zoorld</span>
             </a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
             <div class="collapse navbar-collapse" id="navbarNav">
@@ -41,9 +41,9 @@
         </div>
     </nav>
 
-    <!-- ============================================
-         HERO BANNER
-    ============================================= -->
+    <!-- ===========================
+         HERO SECTION
+    ============================ -->
     <section class="detail-hero-section" id="detailHero">
         <div class="detail-hero-bg" style="background-image: url('https://images.unsplash.com/photo-1557050543-4d5f4e07ef46?w=1920&q=80');">
             <div class="detail-hero-overlay"></div>
@@ -62,100 +62,86 @@
                 <!-- Animal Name -->
                 <div class="detail-animal-name">
                     <span class="animal-category-badge">Mammal</span>
-                    <h1 class="animate-slide-up">African Elephant</h1>
+                    <h1>African Elephant</h1>
                     <p class="scientific-name">Loxodonta africana</p>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- ============================================
-         ANIMAL QUICK INFO PANEL
-    ============================================= -->
-    <section class="info-panel-section">
+    <!-- ===========================
+         QUICK FACTS GRID
+    ============================ -->
+    <section class="quick-facts-section">
         <div class="container">
-            <div class="info-panel">
-                <div class="row g-4">
-                    <div class="col-6 col-lg-4 col-md-4">
-                        <div class="info-card" data-animate="fade-up" data-delay="0">
-                            <div class="info-icon">
-                                <i class="fas fa-globe"></i>
-                            </div>
-                            <div class="info-content">
-                                <span class="info-label">Habitat</span>
-                                <span class="info-value">African Savanna</span>
-                            </div>
-                        </div>
+            <div class="quick-facts-grid">
+                <div class="quick-fact-card">
+                    <div class="quick-fact-icon">
+                        <i class="fas fa-globe"></i>
                     </div>
-                    <div class="col-6 col-lg-4 col-md-4">
-                        <div class="info-card" data-animate="fade-up" data-delay="1">
-                            <div class="info-icon">
-                                <i class="fas fa-carrot"></i>
-                            </div>
-                            <div class="info-content">
-                                <span class="info-label">Diet</span>
-                                <span class="info-value">Herbivore</span>
-                            </div>
-                        </div>
+                    <div class="quick-fact-content">
+                        <span class="quick-fact-label">Habitat</span>
+                        <span class="quick-fact-value">African Savanna</span>
                     </div>
-                    <div class="col-6 col-lg-4 col-md-4">
-                        <div class="info-card" data-animate="fade-up" data-delay="2">
-                            <div class="info-icon">
-                                <i class="fas fa-hourglass-half"></i>
-                            </div>
-                            <div class="info-content">
-                                <span class="info-label">Lifespan</span>
-                                <span class="info-value">60-70 Years</span>
-                            </div>
-                        </div>
+                </div>
+                <div class="quick-fact-card">
+                    <div class="quick-fact-icon">
+                        <i class="fas fa-carrot"></i>
                     </div>
-                    <div class="col-6 col-lg-4 col-md-4">
-                        <div class="info-card" data-animate="fade-up" data-delay="3">
-                            <div class="info-icon">
-                                <i class="fas fa-chart-line"></i>
-                            </div>
-                            <div class="info-content">
-                                <span class="info-label">Conservation</span>
-                                <span class="info-value status-endangered">Endangered</span>
-                            </div>
-                        </div>
+                    <div class="quick-fact-content">
+                        <span class="quick-fact-label">Diet</span>
+                        <span class="quick-fact-value">Herbivore</span>
                     </div>
-                    <div class="col-6 col-lg-4 col-md-4">
-                        <div class="info-card" data-animate="fade-up" data-delay="4">
-                            <div class="info-icon">
-                                <i class="fas fa-ruler-vertical"></i>
-                            </div>
-                            <div class="info-content">
-                                <span class="info-label">Height</span>
-                                <span class="info-value">3-4 m (10-13 ft)</span>
-                            </div>
-                        </div>
+                </div>
+                <div class="quick-fact-card">
+                    <div class="quick-fact-icon">
+                        <i class="fas fa-hourglass-half"></i>
                     </div>
-                    <div class="col-6 col-lg-4 col-md-4">
-                        <div class="info-card" data-animate="fade-up" data-delay="5">
-                            <div class="info-icon">
-                                <i class="fas fa-tachometer-alt"></i>
-                            </div>
-                            <div class="info-content">
-                                <span class="info-label">Speed</span>
-                                <span class="info-value">40 km/h</span>
-                            </div>
-                        </div>
+                    <div class="quick-fact-content">
+                        <span class="quick-fact-label">Lifespan</span>
+                        <span class="quick-fact-value">60-70 Years</span>
+                    </div>
+                </div>
+                <div class="quick-fact-card">
+                    <div class="quick-fact-icon">
+                        <i class="fas fa-chart-line"></i>
+                    </div>
+                    <div class="quick-fact-content">
+                        <span class="quick-fact-label">Conservation</span>
+                        <span class="quick-fact-value quick-fact-status--endangered">Endangered</span>
+                    </div>
+                </div>
+                <div class="quick-fact-card">
+                    <div class="quick-fact-icon">
+                        <i class="fas fa-ruler-vertical"></i>
+                    </div>
+                    <div class="quick-fact-content">
+                        <span class="quick-fact-label">Height</span>
+                        <span class="quick-fact-value">3-4 m (10-13 ft)</span>
+                    </div>
+                </div>
+                <div class="quick-fact-card">
+                    <div class="quick-fact-icon">
+                        <i class="fas fa-tachometer-alt"></i>
+                    </div>
+                    <div class="quick-fact-content">
+                        <span class="quick-fact-label">Speed</span>
+                        <span class="quick-fact-value">40 km/h</span>
                     </div>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- ============================================
-         BRIEF DESCRIPTION
-    ============================================= -->
-    <section class="description-section">
+    <!-- ===========================
+         ABOUT SECTION
+    ============================ -->
+    <section class="about-section">
         <div class="container">
             <div class="row justify-content-center">
                 <div class="col-lg-10">
-                    <div class="description-content" data-animate="fade-up">
-                        <h2>About the African Elephant</h2>
+                    <div class="about-content">
+                        <h2 class="section-title">About the African Elephant</h2>
                         <p>The African Elephant is the largest land mammal on Earth, known for its massive body, large ears, and remarkable intelligence. These magnificent creatures roam the savannas and forests of Africa in tight-knit family herds led by the oldest female, the matriarch.</p>
                         <p>At Zoorld, we provide a spacious and naturalistic habitat that allows our elephants to exhibit their natural behaviors. Our conservation program focuses on protecting these gentle giants in the wild and raising awareness about the threats they face from poaching and habitat loss.</p>
                     </div>
@@ -164,16 +150,15 @@
         </div>
     </section>
 
-    <!-- ============================================
+    <!-- ===========================
          MEDIA SECTION
-    ============================================= -->
+    ============================ -->
     <section class="media-section">
         <div class="container">
             <div class="row g-4">
-                <!-- Video Player -->
                 <div class="col-lg-8">
-                    <div class="media-card video-card" data-animate="fade-up" data-delay="0">
-                        <div class="media-header">
+                    <div class="media-card">
+                        <div class="media-card-header">
                             <h3><i class="fas fa-play-circle"></i> Watch in Action</h3>
                         </div>
                         <div class="video-container">
@@ -192,8 +177,8 @@
                 </div>
                 <!-- Audio Player -->
                 <div class="col-lg-4">
-                    <div class="media-card audio-card" data-animate="fade-up" data-delay="1">
-                        <div class="media-header">
+                    <div class="media-card media-card--audio">
+                        <div class="media-card-header">
                             <h3><i class="fas fa-music"></i> Animal Sounds</h3>
                         </div>
                         <div class="audio-container">
@@ -223,15 +208,15 @@
         </div>
     </section>
 
-    <!-- ============================================
-         GALLERY SLIDER
-    ============================================= -->
+    <!-- ===========================
+         GALLERY SECTION
+    ============================ -->
     <section class="gallery-section">
         <div class="container">
-            <div class="gallery-header" data-animate="fade-up">
-                <h2><i class="fas fa-images"></i> Photo Gallery</h2>
+            <div class="section-header">
+                <h2 class="section-title"><i class="fas fa-images"></i> Photo Gallery</h2>
             </div>
-            <div class="gallery-slider" data-animate="fade-up" data-delay="1">
+            <div class="gallery-slider">
                 <div id="galleryCarousel" class="carousel slide" data-bs-ride="carousel" data-bs-touch="true">
                     <div class="carousel-indicators">
                         <button type="button" data-bs-target="#galleryCarousel" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
@@ -278,18 +263,18 @@
         </div>
     </section>
 
-    <!-- ============================================
+    <!-- ===========================
          INTERESTING FACTS SECTION
-    ============================================= -->
+    ============================ -->
     <section class="facts-section">
         <div class="container">
-            <div class="facts-header" data-animate="fade-up">
-                <h2><i class="fas fa-lightbulb"></i> Interesting Facts</h2>
+            <div class="section-header">
+                <h2 class="section-title"><i class="fas fa-lightbulb"></i> Interesting Facts</h2>
             </div>
             <div class="row g-4">
                 <div class="col-lg-3 col-md-6">
-                    <div class="fact-card" data-animate="flip-up" data-delay="0">
-                        <div class="fact-front">
+                    <div class="fact-card">
+                        <div class="fact-card-inner">
                             <div class="fact-icon">
                                 <i class="fas fa-ear"></i>
                             </div>
@@ -299,8 +284,8 @@
                     </div>
                 </div>
                 <div class="col-lg-3 col-md-6">
-                    <div class="fact-card" data-animate="flip-up" data-delay="1">
-                        <div class="fact-front">
+                    <div class="fact-card">
+                        <div class="fact-card-inner">
                             <div class="fact-icon">
                                 <i class="fas fa-brain"></i>
                             </div>
@@ -310,8 +295,8 @@
                     </div>
                 </div>
                 <div class="col-lg-3 col-md-6">
-                    <div class="fact-card" data-animate="flip-up" data-delay="2">
-                        <div class="fact-front">
+                    <div class="fact-card">
+                        <div class="fact-card-inner">
                             <div class="fact-icon">
                                 <i class="fas fa-users"></i>
                             </div>
@@ -321,8 +306,8 @@
                     </div>
                 </div>
                 <div class="col-lg-3 col-md-6">
-                    <div class="fact-card" data-animate="flip-up" data-delay="3">
-                        <div class="fact-front">
+                    <div class="fact-card">
+                        <div class="fact-card-inner">
                             <div class="fact-icon">
                                 <i class="fas fa-tint"></i>
                             </div>
@@ -335,10 +320,11 @@
         </div>
     </section>
 
-    <!-- ============================================
+    <!-- ===========================
          CTA SECTION
-    ============================================= -->
-    <section class="cta-section detail-cta" id="ctaSection">
+    ============================ -->
+    <section class="cta-section" id="ctaSection">
+        <div class="cta-bg"></div>
         <div class="cta-overlay"></div>
         <div class="container">
             <div class="row justify-content-center">
@@ -346,27 +332,24 @@
                     <h2 class="cta-title">Plan Your Visit to See the Elephants</h2>
                     <p class="cta-text">Book your tickets now and experience these magnificent creatures up close</p>
                     <div class="cta-buttons">
-                        <a href="#" class="btn btn-cta-primary btn-pulse">
-                            <i class="fas fa-ticket-alt"></i>
-                            <span>Book Tickets</span>
-                        </a>
+                        <a href="#" class="btn btn-primary-custom"><i class="fas fa-ticket-alt"></i> Book Tickets</a>
+                        <a href="#" class="btn btn-outline-light"><i class="fas fa-calendar-alt"></i> Plan Your Visit</a>
                     </div>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- ============================================
-         FOOTER - DARK BROWN (#1a1816)
-    ============================================= -->
+    <!-- ===========================
+         FOOTER
+    ============================ -->
     <footer class="footer">
         <div class="container">
             <div class="row g-4">
-                <!-- Brand Column -->
                 <div class="col-lg-4 col-md-6">
                     <div class="footer-brand">
                         <a href="#" class="brand">
-                            <i class="fas fa-paw me-2"></i>
+                            <i class="fas fa-paw"></i>
                             <span class="brand-text">Zoorld</span>
                         </a>
                         <p class="footer-description">Where Nature Comes Alive - Discover the wonders of wildlife in our premium conservation sanctuary.</p>
@@ -378,51 +361,39 @@
                         </div>
                     </div>
                 </div>
-                <!-- Quick Links -->
                 <div class="col-lg-2 col-md-6">
-                    <div class="footer-links">
-                        <h5 class="footer-title">Explore</h5>
-                        <ul>
-                            <li><a href="#">Animals</a></li>
-                            <li><a href="#">Tickets</a></li>
-                            <li><a href="#">Events</a></li>
-                            <li><a href="#">Membership</a></li>
-                        </ul>
-                    </div>
+                    <h5 class="footer-title">Explore</h5>
+                    <ul class="footer-links">
+                        <li><a href="#">Animals</a></li>
+                        <li><a href="#">Tickets</a></li>
+                        <li><a href="#">Events</a></li>
+                        <li><a href="#">Membership</a></li>
+                    </ul>
                 </div>
-                <!-- Information -->
                 <div class="col-lg-2 col-md-6">
-                    <div class="footer-links">
-                        <h5 class="footer-title">Information</h5>
-                        <ul>
-                            <li><a href="#">Hours & Map</a></li>
-                            <li><a href="#">Plan Your Visit</a></li>
-                            <li><a href="#">Groups & Schools</a></li>
-                            <li><a href="#">Accessibility</a></li>
-                        </ul>
-                    </div>
+                    <h5 class="footer-title">Information</h5>
+                    <ul class="footer-links">
+                        <li><a href="#">Hours & Map</a></li>
+                        <li><a href="#">Plan Your Visit</a></li>
+                        <li><a href="#">Groups & Schools</a></li>
+                        <li><a href="#">Accessibility</a></li>
+                    </ul>
                 </div>
-                <!-- Contact -->
                 <div class="col-lg-4 col-md-6">
-                    <div class="footer-links">
-                        <h5 class="footer-title">Visit Us</h5>
-                        <ul class="footer-contact">
-                            <li><i class="fas fa-map-marker-alt"></i> 123 Wildlife Avenue, Forest Park, FP 12345</li>
-                            <li><i class="fas fa-phone"></i> (555) 123-4567</li>
-                            <li><i class="fas fa-envelope"></i> info@zoorld.com</li>
-                            <li><i class="fas fa-clock"></i> Open Daily: 9:00 AM - 6:00 PM</li>
-                        </ul>
-                    </div>
+                    <h5 class="footer-title">Visit Us</h5>
+                    <ul class="footer-contact">
+                        <li><i class="fas fa-map-marker-alt"></i> 123 Wildlife Avenue, Forest Park</li>
+                        <li><i class="fas fa-phone"></i> (555) 123-4567</li>
+                        <li><i class="fas fa-envelope"></i> info@zoorld.com</li>
+                        <li><i class="fas fa-clock"></i> Open Daily: 9:00 AM - 6:00 PM</li>
+                    </ul>
                 </div>
             </div>
         </div>
-        <!-- Footer Bottom -->
         <div class="footer-bottom">
             <div class="container">
                 <div class="row align-items-center">
-                    <div class="col-md-6">
-                        <p class="copyright">&copy; 2024 Zoorld. All rights reserved.</p>
-                    </div>
+                    <div class="col-md-6"><p>&copy; 2024 Zoorld. All rights reserved.</p></div>
                     <div class="col-md-6">
                         <div class="footer-legal">
                             <a href="#">Privacy Policy</a>
@@ -435,11 +406,14 @@
         </div>
     </footer>
 
-    <!-- jQuery -->
+    <!-- Page Transition -->
+    <div class="page-transition" id="pageTransition">
+        <i class="fas fa-paw"></i>
+    </div>
+
+    <!-- Scripts -->
     <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
-    <!-- Bootstrap 5 JS -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
-    <!-- Custom JS -->
     <script src="main.js"></script>
 </body>
 </html>
